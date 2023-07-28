@@ -93,13 +93,16 @@ kutu.removeClass('bg-danger').removeClass('bg-warning').removeClass('bg-primary'
 
 $('#onayla').on('click', function () {
  	
-	cevapAta(cevapSayisi);
-	cevapSayisi++;
-	sifirla();
+	
 	
 	for(let i = cevapSayisi; i > 0; i--){
 		
-	
+		cevapKaydir(i, i-1);
+        }
+        cevapAta(0);
+
+	sifirla();
+        cevapSayisi++;
         });
 
     function cevapAta(i){
@@ -111,8 +114,9 @@ $('#onayla').on('click', function () {
   }
   
 	function kutuRengiOgren(satir, sutun){
-	 	var liste = $('#deneme' + satir + ' #color' + sutun).attr("class").split('bg-');
-	 	return liste[1];
+	 	var liste = $('#deneme' + satir).find('#color' + sutun).attr("class").split('bg-');
+	 	var renk = liste[1].split(' ')[0];
+	 	return renk;
  	}
   
   
