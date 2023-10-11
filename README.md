@@ -9,6 +9,6 @@ The repo does not contain bootstrap.css or bootstrap.js files. You need to downl
 
 Here you can play it or test it:
 
-[https://web.itu.edu.tr/~temizerm/master_mind/tr](Master Mind Test)
+[Master Mind Test](https://web.itu.edu.tr/~temizerm/master_mind/tr)
 
 
