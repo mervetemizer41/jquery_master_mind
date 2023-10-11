@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+  <head><script src="js/color-modes.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Merve Temizer">
+    <meta name="generator" content="Hugo 0.118.2">
+    <title>Master Mind Oyunu</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/navbar-static/">
+
+    <script src="https://kit.fontawesome.com/20a6f818a4.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+    
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+<script src="../js/jquery-3.6.3.js" ></script>
+<script src="../js/bootstrap.min.js" ></script>
+    
+    <!-- Custom styles for this template -->
+    <link href="../css/navbar-static.css" rel="stylesheet">
+  </head>
+  <body>
+   
+
+    
+
+    
+<nav class="navbar navbar-right navbar-expand-md navbar-dark bg-dark mb-4">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="https://web.itu.edu.tr/~temizerm">Yazar Ana Sayfa</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav navbar-right  me-auto mb-2 mb-md-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Master Mind Oyunu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="nasil_oynanir.html">Nasıl oynanır?</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="hakkinda.html">Hakkında</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main class="container">
+  <div class="bg-body-tertiary p-5 rounded">
+    <h1>Master Mind Oyunu</h1>
+    <p class="lead">Bilgisayarda oynadığım ilk oyunlardan birini kodladım. İyi eğlenceler!</p>
+    <a class="btn btn-lg btn-primary" href="#oyun_satiri" role="button">Başlayın!</a>
+  </div>
+  
+  <div id="oyun_satiri" class="p-1 row  border border-danger border-5">
+  <div id="cevap_durumu" class="m-2 p-1  bg-white  col rounded">
+Cevap üzerinde çalışın:
+</div>
+    <div id="color0"  class="m-2 p-1 bg-secondary  col rounded">
+    	<div class="row p-1 ">
+    		<div class="col  p-1 text-center"><button type="button"  id="b0-primary"  class="btn btn-primary border-0 "></button></div>
+    		<div class="col  p-1 text-center"><button type="button"  id="b0-warning"  class="btn btn-warning border-0 "></button></div>
+    	</div>
+    	<div class="row p-1">
+    		<div class="col  p-1 text-center"><button type="button"  id="b0-danger"  class="btn btn-danger border-0 "></button></div>
+    		<div class="col  p-1 text-center"><button type="button"  id="b0-info"  class="btn btn-info border-0 "></button></div>
+    	</div>
+    </div>
+    <div id="color1" class="m-2  p-1 bg-secondary  col rounded">
+    	<div class="row p-1 ">
+    		<div class="col  p-1 text-center"><button type="button" id="b1-primary" class="btn btn-primary border-0 "></button></div>
+    		<div class="col  p-1 text-center"><button type="button" id="b1-warning" class="btn btn-warning border-0 "></button></div>
+    	</div>
+    	<div class="row p-1">
+    		<div class="col  p-1 text-center"><button type="button" id="b1-danger" class="btn btn-danger border-0 "></button></div>
+    		<div class="col  p-1 text-center"><button type="button" id="b1-info" class="btn btn-info  border-0"></button></div>
+    	</div>
+    </div> 
+    <div id="color2" class="m-2 p-1 bg-secondary  col rounded">
+    	<div class="row p-1 ">
+    		<div class="col  p-1 text-center"><button type="button" id="b2-primary" class="btn btn-primary  border-0 "></button></div>
+    		<div class="col  p-1 text-center"><button type="button" id="b2-warning" class="btn btn-warning  border-0 "></button></div>
+    	</div>
+    	<div class="row p-1 ">
+    		<div class="col  p-1 text-center"><button type="button" id="b2-danger" class="btn btn-danger  border-0 "></button></div>
+    		<div class="col  p-1 text-center"><button type="button" id="b2-info" class="btn btn-info  border-0 "></button></div>
+    	</div>
+    </div>
+    <div id="color3" class="m-2 p-1 bg-secondary  col rounded">
+    	<div class="row p-1 ">
+    		<div class="col p-1 text-center"><button type="button" id="b3-primary" class="btn btn-primary  border-0 "></button></div>
+    		<div class="col p-1 text-center"><button type="button" id="b3-warning" class=" btn btn-warning  border-0 "></button></div>
+    	</div>
+    	<div class="row p-1 ">
+    		<div class="col p-1 text-center"><button type="button" id="b3-danger" class=" btn btn-danger  border-0 "></button></div>
+    		<div class="col p-1 text-center"><button type="button" id="b3-info" class=" btn btn-info  border-0 "></button></div>
+    	</div>
+    </div> 
+    <div class="col">
+    <div class="m-2"><button type="button" id="sifirla" class="btn btn-secondary">Sıfırla</button></div>
+    <div class="m-2"><button type="button" id="onayla" class="btn btn-secondary">Onayla</button></div>
+    
+    </div>
+    
+    </div>
+  
+  
+    <div id="deneme0" class="p-1 row"> </div>
+    <div id="deneme1" class="p-1 row"> </div>
+    <div id="deneme2" class="p-1 row"> </div>
+    <div id="deneme3" class="p-1 row"> </div>
+    <div id="deneme4" class="p-1 row"> </div>
+    <div id="deneme5" class="p-1 row"> </div>
+    <div id="deneme6" class="p-1 row"> </div>
+    <div id="deneme7" class="p-1 row"> </div>
+    
+    <div id="oyun" class="p-1 row ">
+    <div class="col"><button type="button" id="bitir" class="btn btn-danger">Oyun Bitir ve Çözümü Göster</button></div>
+    <div class="col"><button type="button" id="baslat" class="btn btn-info">Oyunu Yeniden Başlat</button></div>
+     </div>
+</main>
+
+<script src="../js/master_mind.js" ></script>
+
+    </body>
+</html>
